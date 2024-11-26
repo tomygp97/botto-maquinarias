@@ -31,7 +31,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
-        <title>VICTOR H. BOTTO MAQUINARIAS</title>
+        <title>BOTTO MAQUINARIAS</title>
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
