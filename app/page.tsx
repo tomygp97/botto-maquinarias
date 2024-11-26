@@ -1,41 +1,69 @@
 'use client'
 
-// import Image from 'next/image'
-import { useState, useEffect } from 'react'
+import { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
+import Image from 'next/image'
 
 export default function Home() {
-  const [isMounted, setIsMounted] = useState(false)
+  const [isScrolled, setIsScrolled] = useState(false)
 
   useEffect(() => {
-    setIsMounted(true)
+    const handleScroll = () => {
+      if (window.scrollY > 0) {
+        setIsScrolled(true)
+      } else {
+        setIsScrolled(false)
+      }
+    }
+
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
   return (
     <>
       <div className="relative h-screen w-full overflow-hidden">
         {/* Video Background */}
-        {isMounted && (
-          <video
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="absolute top-0 left-0 w-full h-full object-cover"
-          >
-            {/* <source src="/background-video.mp4" type="video/mp4" /> */}
-            Your browser does not support the video tag.
-          </video>
-        )}
+        <video
+          autoPlay
+          loop
+          muted
+          playsInline
+          className="absolute top-0 left-0 w-full h-full object-cover z-10"
+        >
+          <source src="/background-video.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
 
         {/* Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
 
         {/* Content */}
-        <div className="relative z-10 flex items-baseline mt-20 justify-center h-full">
+        {/* <div className="relative z-20 flex items-baseline mt-20 justify-center h-full">
           <h1 className="text-white text-4xl md:text-6xl font-bold text-center px-4">
             VICTOR H. BOTTO MAQUINARIAS
           </h1>
+        </div> */}
+
+        <div className="relative z-20 flex items-baseline justify-center mt-40 h-full">
+          <motion.div
+            initial={{ opacity: 1, scale: 1 }}
+            animate={{
+              opacity: isScrolled ? 0 : 1,
+              scale: isScrolled ? 0.9 : 1,
+            }}
+            transition={{ duration: 0.5 }}
+          >
+            <Image
+              src="/logo.png"
+              alt="Logo"
+              width={450}
+              height={450}
+              className="max-w-full"
+            />
+          </motion.div>
         </div>
+
       </div>
 
       {/* Sobre Nosotros */}
