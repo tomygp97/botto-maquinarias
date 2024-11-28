@@ -176,9 +176,9 @@ export default function Home() {
       <section className="py-16 bg-gray-800 text-white text-center">
         <h2 className="text-3xl font-bold mb-4">¿Listo para trabajar con nosotros?</h2>
         <p className="text-lg mb-6">Contáctanos hoy mismo y descubre lo que podemos hacer por ti.</p>
-        <Button className="px-6 py-3 bg-[#a9a9a9] text-white font-bold rounded hover:bg-gray-700 transition">
+        <Button className="px-6 py-3 bg-gray-500 text-white font-bold rounded hover:bg-gray-600 transition">
             <Link href="/contacto">
-                Contáctanos
+                Contáctanos
             </Link>
         </Button>
       </section>
