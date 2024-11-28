@@ -29,7 +29,8 @@ export default function Header() {
     }, [])
 
     return (
-        <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#a9a9a9]' : 'bg-transparent'}`}>
+        // <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-[#a9a9a9]' : 'bg-transparent'}`}>
+        <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-black' : 'bg-transparent'}`}>
             <div className="container mx-auto flex justify-between items-center p-4">
                 <Link href="/" className="text-white text-2xl font-bold">
                     {/* Logo animado */}
