@@ -1,13 +1,13 @@
 import { ArrowRight, Tractor, Users, Award } from 'lucide-react'
-import Image from 'next/image'
+import { Hero } from './components/Hero'
 
 export default function AboutUs() {
     return (
         <div className="min-h-screen bg-white">
-            <div className="absolute inset-0">
-                <Image src="/nosotros-hero.tiff" alt="Logo" width={2800} height={400}/>
+            <div>
+                <Hero />
             </div>
-            <main className="container mx-auto mt-96 px-4 py-16">
+            <main className="container mx-auto px-4 py-16">
                     <h1 className="text-4xl font-bold text-center mb-12">Sobre Nosotros</h1>
                 <div className="max-w-7xl mx-auto space-y-24">
                     <section className="text-center">
