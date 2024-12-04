@@ -38,17 +38,17 @@ export default function Productos() {
                           <CategoryCard
                               title="Drillor"
                               description="Gran autonomía y ancho de transporte reducido. Cuenta con un sistema de distribución independiente de semillas y fertilizantes."
-                              imageUrl="/images/crucianelli-seeder.jpg"
+                              imageUrl="/drilorrrr.jpg"
                           />
                           <CategoryCard
                               title="Gringa"
                               description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
-                              imageUrl="/images/tractor.jpg"
+                              imageUrl="/gringa-v.jpg"
                           />
                           <CategoryCard
                               title="Plantor"
                               description="Sembradora plantadora de grano grueso con la más moderna tecnología en siembra de precisión."
-                              imageUrl="/images/used-machine.jpg"
+                              imageUrl="/plantor.jpg"
                           />
                       </div>
                     </div>
@@ -68,19 +68,19 @@ export default function Productos() {
                                 <ProductCard
                                     name="Crucianelli Pionera 3800"
                                     description="Advanced precision seeder for large-scale operations"
-                                    imageUrl="/images/crucianelli-pionera-3800.jpg"
+                                    imageUrl="/pioneraa.jpg"
                                     specs={["Working width: 12.6m", "Rows: 40", "Row spacing: 315mm"]}
                                 />
                                 <ProductCard
                                     name="Crucianelli Gringa V"
                                     description="Versatile seeder for various crop types"
-                                    imageUrl="/images/crucianelli-gringa-v.jpg"
+                                    imageUrl="/gringa-v.jpg"
                                     specs={["Working width: 9.45m", "Rows: 30", "Row spacing: 315mm"]}
                                 />
                                 <ProductCard
                                     name="Crucianelli Planter 8000"
                                     description="High-capacity planter for efficient seeding"
-                                    imageUrl="/images/crucianelli-planter-8000.jpg"
+                                    imageUrl="/planter-8000.jpg"
                                     specs={["Working width: 11m", "Rows: 24", "Row spacing: 525mm"]}
                                 />
                             </div>

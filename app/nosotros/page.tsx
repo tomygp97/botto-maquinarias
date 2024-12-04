@@ -44,22 +44,22 @@ export default function AboutUs() {
                     </section>
 
                     {/* Opcion 1 Video al centro */}
-                    {/* <section className="text-center">
+                    <section className="text-center">
                         <h3 className="text-xl font-semibold mb-4">Nota Especial</h3>
                         <p className="text-gray-600 mb-6">
                             Conoce más sobre nosotros a través de esta nota especial que destaca nuestro compromiso y visión.
                         </p>
-                        <div className="mx-auto rounded-lg shadow-lg overflow-hidden" style={{ maxWidth: '240px', maxHeight: '426px' }}>
+                        <div className="mx-auto max-w-[90%] md:max-w-[80%] rounded-lg shadow-lg overflow-hidden">
                             <video
                                 className="w-full h-auto"
                                 controls
                                 preload="auto"
                             >
-                                <source src="/nota-botto-maquinarias.mp4" type="video/mp4" />
+                                <source src="/hernan-arolfo-y-emiliano-botto.mp4" type="video/mp4" />
                                 Tu navegador no soporta la reproducción de videos.
                             </video>
                         </div>
-                    </section> */}
+                    </section>
 
                     {/* Opcion 2 Video y texto en 2 columnas */}
                     {/* <section className="py-16 bg-gray-50">
@@ -88,7 +88,7 @@ export default function AboutUs() {
                     </section> */}
 
                     {/* Opcion 3 Video izq, Lista derecha */}
-                    <section className="py-16 bg-gray-50">
+                    {/* <section className="py-16 bg-gray-50">
                         <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
                             <div className="flex justify-center">
                                 <div className="rounded-lg shadow-lg overflow-hidden" style={{ maxWidth: '240px', maxHeight: '426px' }}>
@@ -120,7 +120,7 @@ export default function AboutUs() {
                                 </ul>
                             </div>
                         </div>
-                    </section>
+                    </section> */}
 
                     {/* Opcion 4 Fondo decorativo */}
                     {/* <section className="py-16 bg-gradient-to-r from-gray-50 via-white to-gray-100 relative">
