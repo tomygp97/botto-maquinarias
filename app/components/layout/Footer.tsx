@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react'
+import { Facebook, Instagram, Linkedin, Mail, MapPin, Phone } from 'lucide-react'
 
 export default function Footer() {
     return (
@@ -15,35 +15,45 @@ export default function Footer() {
                 <div>
                     <h4 className="text-base font-semibold text-gray-800 mb-4">Acceso rápido</h4>
                     <ul className="space-y-2 text-sm">
-                    <li><Link href="/nosotros" className="text-gray-600 hover:text-gray-700">Nosotros</Link></li>
-                    <li><Link href="/productos" className="text-gray-600 hover:text-gray-700">Productos</Link></li>
-                    <li><Link href="/servicios" className="text-gray-600 hover:text-gray-700">Servicios</Link></li>
-                    <li><Link href="/contacto" className="text-gray-600 hover:text-gray-700">Contacto</Link></li>
+                        <li><Link href="/" className="text-gray-600 hover:text-gray-700">Inicio</Link></li>
+                        <li><Link href="/nosotros" className="text-gray-600 hover:text-gray-700">Nosotros</Link></li>
+                        <li><Link href="/productos" className="text-gray-600 hover:text-gray-700">Productos</Link></li>
+                        <li><Link href="/contacto" className="text-gray-600 hover:text-gray-700">Contacto</Link></li>
                     </ul>
                 </div>
                 <div>
                     <h4 className="text-base font-semibold text-gray-800 mb-4">Contáctanos</h4>
                     <ul className="space-y-2 text-sm text-gray-600">
-                    <li>123 calle ejemplo, Rivadavia</li>
-                    <li>contacto@victorhbotto.com</li>
-                    <li>+54 (555) 123-4567</li>
+                        <li className="flex items-center space-x-2">
+                            <MapPin className="w-7 h-7" />
+                            <span>Ruta 13 Av. Urquiza s/n, María Juana 2445, Santa Fe, Argentina</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                            <Mail className="w-3.5 h-3.5" />
+                            <span>contacto@victorhbotto.com</span>
+                        </li>
+                        <li className="flex items-center space-x-2">
+                            <Phone className="w-3.5 h-3.5" />
+                            <span>+54 (555) 123-4567</span>
+                        </li>
                     </ul>
+
                 </div>
                 <div>
                     <h4 className="text-base font-semibold text-gray-800 mb-4">Seguinos en</h4>
                     <div className="flex space-x-4">
-                    <Link href="#" className="text-gray-600 hover:text-gray-700">
-                        <Facebook className="h-5 w-5" />
-                        <span className="sr-only">Facebook</span>
-                    </Link>
-                    <Link href="#" className="text-gray-600 hover:text-gray-700">
-                        <Instagram className="h-5 w-5" />
-                        <span className="sr-only">Instagram</span>
-                    </Link>
-                    <Link href="#" className="text-gray-600 hover:text-gray-700">
-                        <Linkedin className="h-5 w-5" />
-                        <span className="sr-only">LinkedIn</span>
-                    </Link>
+                        <Link href="#" className="text-gray-600 hover:text-gray-700">
+                            <Facebook className="h-5 w-5" />
+                            <span className="sr-only">Facebook</span>
+                        </Link>
+                        <Link href="#" className="text-gray-600 hover:text-gray-700">
+                            <Instagram className="h-5 w-5" />
+                            <span className="sr-only">Instagram</span>
+                        </Link>
+                        <Link href="#" className="text-gray-600 hover:text-gray-700">
+                            <Linkedin className="h-5 w-5" />
+                            <span className="sr-only">LinkedIn</span>
+                        </Link>
                     </div>
                 </div>
                 </div>
@@ -52,10 +62,10 @@ export default function Footer() {
                     © {new Date().getFullYear()} Victor H. Botto Maquinarias. Todos los derechos reservados.
                 </p>
                 </div>
-                <div className="mt-4 flex justify-center space-x-4">
+                {/* <div className="mt-4 flex justify-center space-x-4">
                 <Link href="/privacidad" className="text-xs text-gray-500 hover:text-gray-700">Política de privacidad</Link>
                 <Link href="/terminos" className="text-xs text-gray-500 hover:text-gray-700">Términos y condiciones</Link>
-                </div>
+                </div> */}
             </div>
         </footer>
     )
