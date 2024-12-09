@@ -1,11 +1,11 @@
-import { Tractor, Settings, Wrench } from "lucide-react";
+import { Tractor, Settings, Wrench, Monitor } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
 
 export const productosDestacados = [
     {
         id: 1,
-        title: "Drilorrrr",
+        title: "Sembradora Drilor",
         image: "/drilorrrr.jpg",
         alt: "Drilorrrr",
     },
@@ -32,19 +32,25 @@ export const servicios: {
     {
         id: 1,
         title: "Venta de máquinas agrícolas",
-        description: "Ofrecemos maquinaria de última tecnología para satisfacer las necesidades del campo.",
+        description: "Ofrecemos maquinaria de última tecnología, <b>usada</b> y <b>nueva</b>, para el sector agrícola.",
         Icon: Tractor,
     },
     {
         id: 2,
-        title: "Repuestos y máquinas usadas",
-        description: "Amplia gama de repuestos y opciones de maquinaria usada de calidad garantizada.",
+        title: "Repuestos",
+        description: "Amplia gama de repuestos de calidad garantizada.",
         Icon: Settings,
     },
     {
         id: 3,
-        title: "Servicio técnico",
-        description: "Contamos con un equipo experto para mantener y reparar tus equipos agrícolas.",
+        title: "Servicio Postventa",
+        description: "Aseguramos el óptimo desempeño de tus equipos con soporte técnico especializado.",
         Icon: Wrench,
+    },
+    {
+        id: 4,
+        title: "Tecnología",
+        description: "Productos innovadores para optimizar la agricultura con tecnología avanzada.",
+        Icon: Monitor,
     },
 ];

@@ -1,14 +1,14 @@
-import { ArrowRight, Tractor, Users, Award } from 'lucide-react'
+import { Tractor, Users, Award } from 'lucide-react'
 import { Hero } from './components/Hero'
+import { Contactanos } from '../components/Contactanos'
 
 export default function AboutUs() {
     return (
         <div className="min-h-screen bg-white">
-            <div>
-                <Hero />
-            </div>
+            <Hero />
+
             <main className="container mx-auto px-4 py-16">
-                    <h1 className="text-4xl font-bold text-center mb-12">Sobre Nosotros</h1>
+                <h1 className="text-4xl font-bold text-center mb-12">Sobre Nosotros</h1>
                 <div className="max-w-7xl mx-auto space-y-24">
                     <section className="text-center">
                         <h2 className="text-2xl font-semibold mb-4">Victor H. Botto Maquinaria</h2>
@@ -43,7 +43,7 @@ export default function AboutUs() {
                         </div>
                     </section>
 
-                    {/* Opcion 1 Video al centro */}
+                    {/* Video */}
                     <section className="text-center">
                         <h3 className="text-xl font-semibold mb-4">Nota Especial</h3>
                         <p className="text-gray-600 mb-6">
@@ -61,96 +61,11 @@ export default function AboutUs() {
                         </div>
                     </section>
 
-                    {/* Opcion 2 Video y texto en 2 columnas */}
-                    {/* <section className="py-16 bg-gray-50">
-                        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                            <div className="text-center md:text-left">
-                                <h3 className="text-center text-2xl font-semibold mb-4">Nota Especial</h3>
-                                <p className="text-center text-gray-600 mb-6">
-                                    Descubre más sobre nuestra visión y compromiso a través de esta nota especial, 
-                                    destacando nuestra pasión por la excelencia en maquinaria agrícola.
-                                </p>
-                            </div>
-
-                            <div className="flex justify-center">
-                                <div className="rounded-lg shadow-lg overflow-hidden" style={{ maxWidth: '240px', maxHeight: '426px' }}>
-                                    <video
-                                        className="w-full h-auto"
-                                        controls
-                                        preload="auto"
-                                    >
-                                        <source src="/nota-botto-maquinarias.mp4" type="video/mp4" />
-                                        Tu navegador no soporta la reproducción de videos.
-                                    </video>
-                                </div>
-                            </div>
-                        </div>
-                    </section> */}
-
-                    {/* Opcion 3 Video izq, Lista derecha */}
-                    {/* <section className="py-16 bg-gray-50">
-                        <div className="container mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-                            <div className="flex justify-center">
-                                <div className="rounded-lg shadow-lg overflow-hidden" style={{ maxWidth: '240px', maxHeight: '426px' }}>
-                                    <video
-                                        className="w-full h-auto"
-                                        controls
-                                        preload="auto"
-                                    >
-                                        <source src="/nota-botto-maquinarias.mp4" type="video/mp4" />
-                                        Tu navegador no soporta la reproducción de videos.
-                                    </video>
-                                </div>
-                            </div>
-                            <div>
-                                <h3 className="text-2xl font-semibold mb-4">Nuestro Compromiso</h3>
-                                <ul className="space-y-4 text-gray-600">
-                                    <li className="flex items-start">
-                                        <Award className="w-5 h-5 text-gray-800 mr-3" />
-                                        Excelencia en maquinaria agrícola.
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Users className="w-5 h-5 text-gray-800 mr-3" />
-                                        Atención personalizada para nuestros clientes.
-                                    </li>
-                                    <li className="flex items-start">
-                                        <Tractor className="w-5 h-5 text-gray-800 mr-3" />
-                                        Innovación y tecnología al servicio del campo.
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </section> */}
-
-                    {/* Opcion 4 Fondo decorativo */}
-                    {/* <section className="py-16 bg-gradient-to-r from-gray-50 via-white to-gray-100 relative">
-                        <div className="container mx-auto text-center">
-                            <h3 className="text-2xl font-semibold mb-4">Nota Especial</h3>
-                            <p className="text-gray-600 mb-6">
-                                Conoce nuestra pasión y compromiso por la excelencia.
-                            </p>
-                            <div className="relative inline-block mx-auto rounded-lg shadow-lg overflow-hidden" style={{ maxWidth: '240px', maxHeight: '426px' }}>
-                                <video
-                                    className="w-full h-auto"
-                                    controls
-                                    preload="auto"
-                                >
-                                    <source src="nota-botto-maquinarias.mp4" type="video/mp4" />
-                                    Tu navegador no soporta la reproducción de videos.
-                                </video>
-                            </div>
-                        </div>
-                    </section> */}
-
-
-                    <div className="text-center">
-                        <a href="/contacto" className="inline-flex items-center text-gray-600 hover:text-gray-700 font-semibold">
-                            Contáctenos
-                            <ArrowRight className="w-5 h-5 ml-2" />
-                        </a>
-                    </div>
                 </div>
             </main>
+
+            {/* CALL TO ACTION */}
+            <Contactanos />
         </div>
     )
 }

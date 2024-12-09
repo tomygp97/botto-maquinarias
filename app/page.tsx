@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 import { ArrowDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { productosDestacados, servicios } from './constants'
+import { Contactanos } from './components/Contactanos'
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -87,7 +88,7 @@ export default function Home() {
           ofreciendo soluciones personalizadas y de calidad.
         </p>
         <Button asChild
-          className='px-6 py-3 bg-gray-700 text-white font-bold rounded hover:bg-black transition'
+          className='px-6 py-3 bg-gray-800 text-white font-bold rounded hover:bg-black transition'
         >
           <Link href="/nosotros">Conócenos</Link>
         </Button>
@@ -123,7 +124,7 @@ export default function Home() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
             viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-3 gap-8"
+            className="grid grid-cols-1 md:grid-cols-4 gap-8"
           >
             {servicios.map(({ id, title, description, Icon }) => (
               <motion.div
@@ -138,7 +139,11 @@ export default function Home() {
                   <Icon className="w-8 h-8 text-gray-800" />
                 </div>
                 <h3 className="text-xl font-semibold mb-2 text-gray-900">{title}</h3>
-                <p className="text-gray-600">{description}</p>
+                {/* <p className="text-gray-600">{description}</p> */}
+                <p
+                  className="text-gray-600"
+                  dangerouslySetInnerHTML={{ __html: description }}
+                />
               </motion.div>
             ))}
           </motion.div>
@@ -172,16 +177,8 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Contacto */}
-      <section className="py-16 bg-gray-800 text-white text-center">
-        <h2 className="text-3xl font-bold mb-4">¿Listo para trabajar con nosotros?</h2>
-        <p className="text-lg mb-6">Contáctanos hoy mismo y descubre lo que podemos hacer por ti.</p>
-        <Button className="px-6 py-3 bg-gray-500 text-white font-bold rounded hover:bg-gray-600 transition">
-            <Link href="/contacto">
-                Contáctanos
-            </Link>
-        </Button>
-      </section>
+      {/* CALL TO ACTION */}
+      <Contactanos />
     </>
   )
 }

@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import ProductCard from "../components/ProductCard"
-import CategoryCard from "../components/CategoryCard"
+import { Contactanos } from '../components/Contactanos'
 
 
 export default function Productos() {
@@ -23,32 +23,60 @@ export default function Productos() {
                   <div className="relative z-10 max-w-4xl mx-auto px-4">
                       <h1 className="text-4xl md:text-6xl font-bold mb-4">Botto Maquinarias</h1>
                       <p className="text-xl md:text-2xl mb-8">Concesionario de maquinaria agricola</p>
-                      <p className="text-xl md:text-2xl mb-8">Crucianelli | Stara | Gea | Maizco | Decagro | Praba</p>
+                      <p className="text-xl md:text-2xl mb-8">Crucianelli | Stara</p>
                       <Button asChild size="lg">
                         <Link href="#products">Explora nuestros productos</Link>
                       </Button>
                   </div>
                 </section>
 
-                {/* PRODUCT CATEGORIES */}
+                {/* CRUCIANELLI */}
                 <section id="products" className="py-16 bg-gray-100">
                     <div className="container mx-auto px-4">
                       <h2 className="text-3xl font-bold text-center mb-12">Crucianelli</h2>
-                      <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                          <CategoryCard
-                              title="Drillor"
+                      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
+                          <ProductCard 
+                              name="Drillor"
+                              description="Gran autonomía y ancho de transporte reducido. Cuenta con un sistema de distribución independiente de semillas y fertilizantes."
+                              imageUrl="/drilorrrr.jpg"
+                              buttonText="Cotizar Drillor"
+                          />
+                          <ProductCard
+                              name="Gringa"
+                              description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
+                              imageUrl="/gringa-v.jpg"
+                              buttonText="Cotizar Gringa"
+                          />
+                          <ProductCard
+                              name="Plantor"
+                              description="Sembradora plantadora de grano grueso con la más moderna tecnología en siembra de precisión."
+                              imageUrl="/plantor.jpg"
+                              buttonText="Cotizar Plantor"
+                          />
+                          <ProductCard
+                              name="Pionera"
+                              description="Excelente calidad de implantación y nuevas tolvas con mayor capacidad. Sembradora de grano fino multipropósito."
+                              imageUrl="/pionera.jpg"
+                              buttonText="Cotizar Pionera"
+                          />
+                      </div>
+                    </div>
+                </section>
+
+                {/* STARA */}
+                <section id="products" className="py-16 bg-gray-100">
+                    <div className="container mx-auto px-4">
+                      <h2 className="text-3xl font-bold text-center mb-12">Stara</h2>
+                      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+                          <ProductCard
+                              name="Drillor"
                               description="Gran autonomía y ancho de transporte reducido. Cuenta con un sistema de distribución independiente de semillas y fertilizantes."
                               imageUrl="/drilorrrr.jpg"
                           />
-                          <CategoryCard
-                              title="Gringa"
+                          <ProductCard
+                              name="Gringa"
                               description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
                               imageUrl="/gringa-v.jpg"
-                          />
-                          <CategoryCard
-                              title="Plantor"
-                              description="Sembradora plantadora de grano grueso con la más moderna tecnología en siembra de precisión."
-                              imageUrl="/plantor.jpg"
                           />
                       </div>
                     </div>
@@ -90,19 +118,19 @@ export default function Productos() {
                                 <ProductCard
                                     name="PowerTrac 5000"
                                     description="Versatile tractor for medium-sized farms"
-                                    imageUrl="/images/powertrac-5000.jpg"
+                                    imageUrl="/pioneraa.jpg"
                                     specs={["Engine: 100 HP", "Transmission: 16x16", "Lift capacity: 4,500 kg"]}
                                 />
                                 <ProductCard
                                     name="MegaForce 7500"
                                     description="High-power tractor for demanding tasks"
-                                    imageUrl="/images/megaforce-7500.jpg"
+                                    imageUrl="/gringa-v.jpg"
                                     specs={["Engine: 180 HP", "Transmission: 24x24", "Lift capacity: 8,000 kg"]}
                                 />
                                 <ProductCard
                                     name="EcoTill 3000"
                                     description="Fuel-efficient tractor for sustainable farming"
-                                    imageUrl="/images/ecotill-3000.jpg"
+                                    imageUrl="/planter-8000.jpg"
                                     specs={["Engine: 75 HP", "Transmission: CVT", "Lift capacity: 3,500 kg"]}
                                 />
                             </div>
@@ -112,7 +140,27 @@ export default function Productos() {
                 </section>
 
                 {/* USED MACHINES */}
-                <section id="used-machines" className="py-16 bg-gray-100">
+                <section className="py-16 bg-primary text-primary-foreground">
+                  <div className="container mx-auto px-4 text-center">
+                    <h2 className="text-3xl font-bold mb-4">¿Quieres conocer nuestras máquinas usadas?</h2>
+                    <p className="text-xl mb-8">Visita nuestros sitios de venta</p>
+                    <div className="flex justify-center space-x-4">
+                      <Button asChild size="lg" variant="secondary">
+                        <Link href="https://www.agroads.com.ar/e/victor-botto-maquinarias/?fbclid=PAY2xjawHD6qtleHRuA2FlbQIxMAABpsA4Y8fvvfK2bf1JVH9oY_hJ3aNnBpenvdFEN9p5gg3pI8enMGz-twT5qQ_aem_cEGDcx2UFlWHWpn-NnmoRw" target="_blank">
+                            Agroads
+                        </Link>
+                      </Button>
+                      <Button asChild size="lg" variant="secondary">
+                        <Link href="https://www.agrofy.com.ar/victor-h-botto-maquinarias?fbclid=PAY2xjawHD6uJleHRuA2FlbQIxMAABpqSp_LqVBn1qI4VwtlVspn6M2VQA7jwCgGHv6NFvzD7cikTqIOonWiRqEg_aem_6d1UGvFbAHEMHcbNtWkWnQ" target="_blank">
+                          Agrofy
+                        </Link>
+                      </Button>
+                    </div>
+                  </div>
+                </section>
+
+                {/* USED MACHINES */}
+                {/* <section id="used-machines" className="py-16 bg-gray-100">
                   <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold text-center mb-12">Usados de Calidad</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -136,19 +184,37 @@ export default function Productos() {
                         />
                     </div>
                   </div>
-                </section>
+                </section> */}
 
-                {/* CALL TO ACTION */}
-                <section className="py-16 bg-primary text-primary-foreground">
-                  <div className="container mx-auto px-4 text-center">
-                    <h2 className="text-3xl font-bold mb-4">¿Está listo para conseguir su equipo agrícola?</h2>
-                    <p className="text-xl mb-8">Contáctenos hoy para obtener asesoramiento experto y precios competitivos en nuestra gama de máquinas nuevas y usadas.</p>
-                    <Button asChild size="lg" variant="secondary">
-                      <Link href="/contacto">Contáctenos</Link>
-                    </Button>
+                {/* Technology */}
+                <section id="used-machines" className="py-16 bg-gray-100">
+                  <div className="container mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-center mb-12">Tecnología de Siembra</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                        <ProductCard
+                          name="Monitor Orizon" 
+                          description=""
+                          imageUrl="/orizon-recortado.png"
+                          specs={["Pantalla táctil 10.1″", "Conexión WIFI","El mejor control de siembra unificado", "Índice de dobles y fallas", "Índice de calidad de dosificación", "Siembra y Fertilización variable", "Corte línea a línea"]}
+                        />
+                        <ProductCard
+                          name="Map 7 Elite"
+                          description=""
+                          imageUrl="/Map-7.png"
+                          specs={["Sensores inteligentes. Semillas, fertilizante, rotación, RPM, tolva presión capacidad de control de hasta 120 sensores de semillas y fertilizantes.", "Preciso conteo de chía y pastura","Densidad de Siembra. Indica la cantidad de semillas por metro y por hectárea que se está sembrando." ]}
+                        />
+                        <ProductCard
+                          name="Consola Plantor"
+                          description="Mando a distancia manual de dosis de fertilizantes."
+                          imageUrl="/consola-plantor.png"
+                          specs={["Trabajo", "Plegado","Nivel", "Marcador"]}
+                        />
+                    </div>
                   </div>
                 </section>
 
+                {/* CALL TO ACTION */}
+                <Contactanos />
 
             </main>
         </div>
