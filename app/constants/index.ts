@@ -8,18 +8,22 @@ export const productosDestacados = [
         title: "Sembradora Drilor",
         image: "/drilorrrr.jpg",
         alt: "Drilorrrr",
+        link: "/productos#crucianelli"
     },
     {
         id: 2,
-        title: "Pionera",
-        image: "/pioneraa.jpg",
+        title: "Imperador 3000 - 4000",
+        image: "/imperador-3000.jpg",
         alt: "Pionera",
+        link: "/productos#stara",
+
     },
     {
         id: 3,
-        title: "Plantor",
-        image: "/plantor.jpg",
-        alt: "Plantor",
+        title: "Monitor de Siembra Map 7",
+        image: "/Map-7.png",
+        alt: "Map 7",
+        link: "/productos#leaf"
     },
 ];
 

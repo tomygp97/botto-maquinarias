@@ -25,61 +25,100 @@ export default function Productos() {
                       <p className="text-xl md:text-2xl mb-8">Concesionario de maquinaria agricola</p>
                       <p className="text-xl md:text-2xl mb-8">Crucianelli | Stara</p>
                       <Button asChild size="lg">
-                        <Link href="#products">Explora nuestros productos</Link>
+                        <Link href="#crucianelli">Explora nuestros productos</Link>
                       </Button>
                   </div>
                 </section>
 
                 {/* CRUCIANELLI */}
-                <section id="products" className="py-16 bg-gray-100">
+                  <section id="crucianelli" className="py-16 bg-gray-100">
                     <div className="container mx-auto px-4">
-                      <h2 className="text-3xl font-bold text-center mb-12">Crucianelli</h2>
-                      <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-                          <ProductCard 
-                              name="Drillor"
-                              description="Gran autonomía y ancho de transporte reducido. Cuenta con un sistema de distribución independiente de semillas y fertilizantes."
-                              imageUrl="/drilorrrr.jpg"
-                              buttonText="Cotizar Drillor"
-                          />
-                          <ProductCard
-                              name="Gringa"
-                              description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
-                              imageUrl="/gringa-v.jpg"
-                              buttonText="Cotizar Gringa"
-                          />
-                          <ProductCard
-                              name="Plantor"
-                              description="Sembradora plantadora de grano grueso con la más moderna tecnología en siembra de precisión."
-                              imageUrl="/plantor.jpg"
-                              buttonText="Cotizar Plantor"
-                          />
-                          <ProductCard
-                              name="Pionera"
-                              description="Excelente calidad de implantación y nuevas tolvas con mayor capacidad. Sembradora de grano fino multipropósito."
-                              imageUrl="/pionera.jpg"
-                              buttonText="Cotizar Pionera"
-                          />
-                      </div>
+                        <h2 className="text-3xl font-bold text-center mb-12">Crucianelli</h2>
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                            <ProductCard 
+                                name="Drillor"
+                                description="Gran autonomía y ancho de transporte reducido. Cuenta con un sistema de distribución independiente de semillas y fertilizantes."
+                                imageUrl="/drilorrrr.jpg"
+                                buttonText="Cotizar Drillor"
+                            />
+                            <ProductCard
+                                name="Gringa"
+                                description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
+                                imageUrl="/gringa-v.jpg"
+                                buttonText="Cotizar Gringa"
+                            />
+                            <ProductCard
+                                name="Plantor"
+                                description="Sembradora plantadora de grano grueso con la más moderna tecnología en siembra de precisión."
+                                imageUrl="/plantor.jpg"
+                                buttonText="Cotizar Plantor"
+                            />
+                        </div>
+                        <div className="flex justify-center mt-8">
+                            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl">
+                                <ProductCard
+                                    name="Pionera"
+                                    description="Excelente calidad de implantación y nuevas tolvas con mayor capacidad. Sembradora de grano fino multipropósito."
+                                    imageUrl="/pionera.jpg"
+                                    buttonText="Cotizar Pionera"
+                                />
+                                <ProductCard
+                                    name="Mixia"
+                                    description="Descripción breve del nuevo producto Crucianelli."
+                                    imageUrl="/mixia.jpg"
+                                    buttonText="Cotizar New Product"
+                                />
+                            </div>
+                        </div>
                     </div>
                 </section>
 
                 {/* STARA */}
-                <section id="products" className="py-16 bg-gray-100">
-                    <div className="container mx-auto px-4">
-                      <h2 className="text-3xl font-bold text-center mb-12">Stara</h2>
-                      <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                          <ProductCard
-                              name="Drillor"
-                              description="Gran autonomía y ancho de transporte reducido. Cuenta con un sistema de distribución independiente de semillas y fertilizantes."
-                              imageUrl="/drilorrrr.jpg"
-                          />
-                          <ProductCard
-                              name="Gringa"
-                              description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
-                              imageUrl="/gringa-v.jpg"
-                          />
+                <section id="stara" className="py-16 bg-gray-100">
+                  <div className="container mx-auto px-4">
+                    <h2 className="text-3xl font-bold text-center mb-12">Stara</h2>
+                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+                        <ProductCard
+                            name="Drillor"
+                            description="Gran autonomía y ancho de transporte reducido. Cuenta con un sistema de distribución independiente de semillas y fertilizantes."
+                            imageUrl="/drilorrrr.jpg"
+                        />
+                        <ProductCard
+                            name="Gringa"
+                            description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
+                            imageUrl="/gringa-v.jpg"
+                        />
+                        <ProductCard
+                            name="Gringa"
+                            description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
+                            imageUrl="/gringa-v.jpg"
+                        />
+                        <ProductCard
+                            name="Gringa"
+                            description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
+                            imageUrl="/gringa-v.jpg"
+                        />
+                        <ProductCard
+                            name="Gringa"
+                            description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
+                            imageUrl="/gringa-v.jpg"
+                        />
+                        <ProductCard
+                            name="Gringa"
+                            description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
+                            imageUrl="/gringa-v.jpg"
+                        />
+                    </div>
+                    <div className="flex justify-center mt-8">
+                      <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-xl">
+                        <ProductCard
+                            name="Gringa"
+                            description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
+                            imageUrl="/gringa-v.jpg"
+                        />
                       </div>
                     </div>
+                  </div>
                 </section>
 
                 {/* FEATURED PRODUCTS */}
@@ -159,35 +198,8 @@ export default function Productos() {
                   </div>
                 </section>
 
-                {/* USED MACHINES */}
-                {/* <section id="used-machines" className="py-16 bg-gray-100">
-                  <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-center mb-12">Usados de Calidad</h2>
-                    <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <ProductCard
-                          name="Agrometal MX 3321" 
-                          description="Sembradora versátil y confiable para fertilización simple, ideal para cultivos extensivos y preparada para un desempeño eficiente en diferentes terrenos."
-                          imageUrl="/agrometal-mx-3321.jpg"
-                          specs={["Año: 2009", "Cajón Alfalfero","Modelo: Gringa 2452"]}
-                        />
-                        <ProductCard
-                          name="Metalfor Multriple 3200"
-                          description="Sembradora de grano fino equipada con motor Deutz de alto rendimiento, diseñada para operaciones precisas y confiables en el campo."
-                          imageUrl="/metalfor-multriple-3200.jpg"
-                          specs={["Año: 2004", "Motor: Deutz 120 HP","Modelo: 3200" ]}
-                        />
-                        <ProductCard
-                          name="Pulverizadora Praba - AR 3.0"
-                          description="Equipo ideal para aplicaciones precisas en grandes extensiones, diseñado para maximizar la eficiencia y la cobertura."
-                          imageUrl="/pulverizadora-praba.jpg"
-                          specs={["Año: 2013", "Motor: Deutz 120 HP","Barra 28 mts"]}
-                        />
-                    </div>
-                  </div>
-                </section> */}
-
                 {/* Technology */}
-                <section id="used-machines" className="py-16 bg-gray-100">
+                <section id="leaf" className="py-16 bg-gray-100">
                   <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold text-center mb-12">Tecnología de Siembra</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
