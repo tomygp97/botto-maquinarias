@@ -21,7 +21,7 @@ export const Hero = () => {
 				width={1900}
 				height={200}
 				className={`transition-opacity duration-500 ease-in-out ${isLoading ? 'opacity-0' : 'opacity-100'}`}
-				onLoadingComplete={() => setIsLoading(false)}
+				onLoad={() => setIsLoading(false)}
 			/>
 		</>
 	)

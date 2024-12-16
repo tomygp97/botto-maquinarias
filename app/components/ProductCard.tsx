@@ -1,16 +1,16 @@
 import Image from "next/image"
 import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import Link from "next/link";
 
 
 type ProductCardProps = {
-    name: string; // Nombre del producto o categoría
-    description: string; // Descripción breve
-    imageUrl: string; // URL de la imagen
-    specs?: string[]; // Lista de especificaciones, opcional
-    link?: string; // Enlace para redirigir, opcional
-    buttonText?: string; // Texto del botón, opcional
+    name: string;
+    description: string;
+    imageUrl: string;
+    specs?: string[];
+    // link?: string;
+    whatsappNumber: string,
+    buttonText?: string;
 };
 
 export default function ProductCard({
@@ -18,9 +18,15 @@ export default function ProductCard({
     description, 
     imageUrl, 
     specs= [], 
-    link, 
+    // link,
+    whatsappNumber,
     buttonText= "Solicitar Cotización" 
 }: ProductCardProps) {
+
+    const whatsappMessage = `Hola, estoy interesado en el producto "${name}"`;
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+
+
     return (
         <Card className="h-full flex flex-col">
             <CardHeader>
@@ -44,13 +50,11 @@ export default function ProductCard({
                 )}
             </CardContent>
             <CardFooter className="mt-auto">
-                {link ? (
                 <Button asChild className="w-full">
-                    <Link href={link}>{buttonText}</Link>
+                    <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
+                        {buttonText}
+                    </a>
                 </Button>
-                ) : (
-                <Button className="w-full">{buttonText}</Button>
-                )}
             </CardFooter>
         </Card>
     );

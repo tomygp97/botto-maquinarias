@@ -21,7 +21,7 @@ import {
 } from "@/components/ui/select"
 
 // import { toast } from "@/components/ui/use-toast"
-import { MapPin, Phone, Mail, Send, MousePointer } from 'lucide-react'
+import { MapPin, Phone, Mail, Send, Pin } from 'lucide-react'
 import { Label } from '@/components/ui/label'
 
 type ContactData = {
@@ -215,7 +215,7 @@ export default function ContactPage() {
                 >
                     <Label>Selecciona un Área</Label>
                     <div className="flex items-center space-x-2">
-                        <MousePointer className="text-primary h-5 w-5" />
+                        <Pin className="text-primary h-5 w-5" />
                         <Select onValueChange={handleSelectChange} defaultValue={selectedContact}>
                             <SelectTrigger className="w-[280px]">
                                 <SelectValue placeholder="Selecciona un departamento" />
