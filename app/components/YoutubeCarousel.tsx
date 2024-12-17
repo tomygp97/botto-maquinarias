@@ -32,7 +32,7 @@ export function YouTubeCarousel() {
                                 controls
                                 preload="auto"
                             >
-                                <source src="/nota-recortada.mp4" type="video/mp4" />
+                                <source src="/videos/nota-recortada.mp4" type="video/mp4" />
                                 Tu navegador no soporta la reproducción de videos.
                             </video>
                         </div>
