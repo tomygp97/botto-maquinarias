@@ -47,14 +47,14 @@ export default function Productos() {
                                 description="Sembradora de grano grueso con tecnología Precision Planting para mayores rendimientos y mejora de la calidad de siembra."
                                 imageUrl="/gringa-v.jpg"
                                 buttonText="Cotizar Gringa"
-                                whatsappNumber='5492644843117'
+                                whatsappNumber='5493406641249'
                             />
                             <ProductCard
                                 name="Plantor"
                                 description="Sembradora plantadora de grano grueso con la más moderna tecnología en siembra de precisión."
                                 imageUrl="/plantor.jpg"
                                 buttonText="Cotizar Plantor"
-                                whatsappNumber='5492644843117'
+                                whatsappNumber='5493406641249'
                             />
                         </div>
                         <div className="flex justify-center mt-8">
@@ -64,14 +64,14 @@ export default function Productos() {
                                     description="Excelente calidad de implantación y nuevas tolvas con mayor capacidad. Sembradora de grano fino multipropósito."
                                     imageUrl="/pionera.jpg"
                                     buttonText="Cotizar Pionera"
-                                    whatsappNumber='5492644843117'
+                                    whatsappNumber='5493406641249'
                                 />
                                 <ProductCard
                                     name="Mixia"
                                     description="La nueva sembradora de la familia Drilor ofrece un mix de prestaciones perfecto y un rendimiento insuperable."
                                     imageUrl="/mixia.jpg"
-                                    buttonText="Cotizar New Product"
-                                    whatsappNumber='5492644843117'
+                                    buttonText="Cotizar Mixia"
+                                    whatsappNumber='5493406641249'
                                 />
                             </div>
                         </div>
@@ -87,38 +87,37 @@ export default function Productos() {
                             name="Hercules 6.0"
                             description="El distribuidor Hércules tiene excelente calidad de aplicación y precisión en la dosis, alto rendimiento operativo, con resultados en la plantación más provechosos."
                             imageUrl="/stara-hercules-6.0.jpg"
-                            whatsappNumber='5492644843117'
-
+                            whatsappNumber='5493406641249'
                         />
                         <ProductCard
                             name="Imperador 3000 y 4000"
                             description="El autopropulsado Imperador 3000 y 4000 de Stara ofrece la mejor eficiencia en pulverización, resultado de la combinación de las tecnologías innovadoras y de su calidad de aplicación ya comprobada."
                             imageUrl="/imperador-3000.jpg"
-                            whatsappNumber='5492644843117'
+                            whatsappNumber='5493406641249'
                         />
                         <ProductCard
                             name="Imperador 3.0"
                             description="La mayor eficiencia en pulverización, la mayor precisión en la distribución y una uniformidad excelente en la siembra"
                             imageUrl="/stara-imperador-3.0.jpg"
-                            whatsappNumber='5492644843117'
+                            whatsappNumber='5493406641249'
                         />
                         <ProductCard
                             name="Bruttus 12000"
                             description="El distribuidor por gravedad Bruttus 12000 garantiza la excelente uniformidad de aplicación y precisión en la distribución de enmiendas y fertilizantes granulados."
                             imageUrl="/stara-bruttus-12000.jpg"
-                            whatsappNumber='5492644843117'
+                            whatsappNumber='5493406641249'
                         />
                         <ProductCard
                             name="Reboke ninja"
                             description="Las tolvas agrícolas Reboke Ninja están desarrolladas para el transporte de granos y alcanzan alto rendimiento de trabajo."
                             imageUrl="/stara-reboke-ninja.jpg"
-                            whatsappNumber='5492644843117'
+                            whatsappNumber='5493406641249'
                         />
                         <ProductCard
                             name="Hércules 10000 Inox"
                             description="El distribuidor de arrastre Hércules es ideal para distribuir enmiendas, fertilizantes y semillas, con excelente uniformidad y calidad de distribución."
                             imageUrl="/stara-hercules-10000-inox.jpg"
-                            whatsappNumber='5492644843117'
+                            whatsappNumber='5493406641249'
                         />
                     </div>
                     <div className="flex justify-center mt-8">
@@ -127,7 +126,7 @@ export default function Productos() {
                             name="Brava +"
                             description="La plataforma Brava + cosecha las más diversificadas variedades de maíz con eficiencia, calidad y seguridad. El carenado lateral evita la pérdida de espigas en los extremos, lo que otorga eficiencia durante la cosecha."
                             imageUrl="/stara-brava.jpg"
-                            whatsappNumber='5492644843117'
+                            whatsappNumber='5493406641249'
                         />
                       </div>
                     </div>
@@ -164,21 +163,21 @@ export default function Productos() {
                           description=""
                           imageUrl="/orizon-recortado.png"
                           specs={["Pantalla táctil 10.1″", "Conexión WIFI","El mejor control de siembra unificado", "Índice de dobles y fallas", "Índice de calidad de dosificación", "Siembra y Fertilización variable", "Corte línea a línea"]}
-                          whatsappNumber='5492644843117'
+                          whatsappNumber='5493406641249'
                         />
                         <ProductCard
                           name="Map 7 Elite"
                           description=""
                           imageUrl="/Map-7.png"
                           specs={["Sensores inteligentes. Semillas, fertilizante, rotación, RPM, tolva presión capacidad de control de hasta 120 sensores de semillas y fertilizantes.", "Preciso conteo de chía y pastura","Densidad de Siembra. Indica la cantidad de semillas por metro y por hectárea que se está sembrando." ]}
-                          whatsappNumber='5492644843117'
+                          whatsappNumber='5493406641249'
                         />
                         <ProductCard
                           name="Consola Plantor"
                           description="Mando a distancia manual de dosis de fertilizantes."
                           imageUrl="/consola-plantor.png"
                           specs={["Trabajo", "Plegado","Nivel", "Marcador"]}
-                          whatsappNumber='5492644843117'
+                          whatsappNumber='5493406641249'
                         />
                     </div>
                   </div>

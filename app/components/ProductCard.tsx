@@ -8,7 +8,6 @@ type ProductCardProps = {
     description: string;
     imageUrl: string;
     specs?: string[];
-    // link?: string;
     whatsappNumber: string,
     buttonText?: string;
 };
@@ -17,13 +16,12 @@ export default function ProductCard({
     name, 
     description, 
     imageUrl, 
-    specs= [], 
-    // link,
+    specs = [], 
     whatsappNumber,
-    buttonText= "Solicitar Cotización" 
+    buttonText = "Solicitar Cotización" 
 }: ProductCardProps) {
 
-    const whatsappMessage = `Hola, estoy interesado en el producto "${name}"`;
+    const whatsappMessage = `Hola! Vengo desde su sitio web y quiero más información sobre: ${name}`;
     const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
 
 
