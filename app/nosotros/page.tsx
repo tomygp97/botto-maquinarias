@@ -13,33 +13,15 @@ export default function Nosotros() {
             <main className="container mx-auto px-4 py-16">
                 <h1 className="text-4xl font-bold text-center mb-12">Sobre Nosotros</h1>
                 <div className="max-w-7xl mx-auto space-y-24">
-                    {/* <section className="text-center">
-                        <h2 className="text-2xl font-semibold mb-4">Victor H. Botto Maquinaria</h2>
-                        <p className="text-gray-600">
-                            Somos líderes en la venta y distribución de maquinaria agrícola de alta calidad. 
-                            Con años de experiencia, nos dedicamos a impulsar la eficiencia y productividad 
-                            del sector agrícola en toda la región.
-                        </p>
-                    </section> */}
 
                     {/* Texto destacado */}
                     <section className="text-center mb-16">
                         <div className="flex justify-center items-center space-x-4">
                             <h2 className="text-3xl font-semibold text-gray-900 mb-4">
-                                {/* <Calendar className="w-12 h-12 text-green-500" /> */}
                                 <strong className=''>37 AÑOS</strong> AVALAN NUESTRO COMPROMISO CON EL HOMBRE DE CAMPO.
                             </h2>
                         </div>
                     </section>
-
-                    {/* <section className="bg-gray-50 p-6 rounded-lg">
-                        <h3 className="text-xl font-semibold mb-4">Nuestra Misión</h3>
-                        <p className="text-gray-600">
-                            Proporcionar soluciones innovadoras y confiables en maquinaria agrícola, 
-                            contribuyendo al desarrollo sostenible del sector y al éxito de nuestros clientes.
-                        </p>
-                    </section> */}
-
 
                     {/* Información de la empresa */}
                     <section className="bg-gray-50 p-6 rounded-lg">
@@ -91,24 +73,6 @@ export default function Nosotros() {
                         <h3 className="text-2xl font-semibold text-center mb-8">Entrevistas Destacadas</h3>
                         <YouTubeCarousel />
                     </section>
-
-                    {/* Video */}
-                    {/* <section className="text-center">
-                        <h3 className="text-xl font-semibold mb-4">Nota Especial</h3>
-                        <p className="text-gray-600 mb-6">
-                            Conoce más sobre nosotros a través de esta nota especial que destaca nuestro compromiso y visión.
-                        </p>
-                        <div className="mx-auto max-w-[90%] md:max-w-[80%] rounded-lg shadow-lg overflow-hidden">
-                            <video
-                                className="w-full h-auto"
-                                controls
-                                preload="auto"
-                            >
-                                <source src="/nota-recortada.mp4" type="video/mp4" />
-                                Tu navegador no soporta la reproducción de videos.
-                            </video>
-                        </div>
-                    </section> */}
 
                 </div>
             </main>

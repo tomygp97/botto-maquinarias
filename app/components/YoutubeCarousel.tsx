@@ -14,7 +14,7 @@ interface YouTubeVideo {
 }
 
 const videos: YouTubeVideo[] = [
-    { id: "oW-SPdwnF0Y?si=BrQUK_ZwDRJrTAwm", title: "YouTube video player" },
+    { id: "oW-SPdwnF0Y?si=BrQUK_ZwDRJrTAwm", title: "Interview 1" },
     { id: "FI9KOX4ShAA?si=-tJRIC5goUvo1pE8", title: "Interview 2" },
     { id: "x72QeOomykA?si=-ClUw_TGkXyEsgyb", title: "Interview 3" },
     { id: "wZO19S1PPZY?si=TSRHO9W_V8MulzqI", title: "Interview 4" },
@@ -24,6 +24,20 @@ export function YouTubeCarousel() {
     return (
         <Carousel className="w-full max-w-xs sm:max-w-sm md:max-w-md lg:max-w-lg xl:max-w-xl mx-auto">
             <CarouselContent>
+                <CarouselItem>
+                    <div className="p-1">
+                        <div className="aspect-video">
+                            <video
+                                className="w-full h-auto"
+                                controls
+                                preload="auto"
+                            >
+                                <source src="/nota-recortada.mp4" type="video/mp4" />
+                                Tu navegador no soporta la reproducción de videos.
+                            </video>
+                        </div>
+                    </div>
+                </CarouselItem>
                 {videos.map((video) => (
                 <CarouselItem key={video.id}>
                     <div className="p-1">
