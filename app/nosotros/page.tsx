@@ -35,7 +35,7 @@ export default function Nosotros() {
                             calidad de atención en venta y servicio de posventa.
                         </p>
                         <p className="text-gray-600 leading-relaxed mt-4">
-                            Siendo concesionarios premium de la marca líder de sembradoras de Argentina, particularmente 
+                            Siendo concesionario premium de la marca líder de sembradoras de Argentina, particularmente 
                             en la línea Air Drill, nos posicionamos como uno de los concesionarios con mayor cantidad 
                             de unidades vendidas con este sistema. En el año 2022, nos incorporamos a la red de concesionarios 
                             Stara, una empresa brasilera de evolución constante, con el fin de brindar un amplio abanico de 

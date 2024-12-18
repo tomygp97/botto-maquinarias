@@ -97,7 +97,6 @@ export default function Home() {
       {/* Nuestros Servicios */}
       <section className="relative py-16 bg-cover"
         style={{
-          // backgroundImage: "url('/equipo.jpg')",
           backgroundImage: "url('/Crucianelli-Pionera.jpg')",
           backgroundPosition: "center",
         }}
