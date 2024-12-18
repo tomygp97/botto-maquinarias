@@ -132,7 +132,7 @@ export default function Home() {
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
                 transition={{ duration: 0.6, delay: id * 0.1 }}
-                // viewport={{ once: true }}
+                viewport={{ once: true }}
                 className="relative text-center p-6 bg-white bg-opacity-90 rounded shadow-md hover:shadow-lg transition"
               >
                 <div className="flex justify-center items-center w-16 h-16 bg-gray-200 rounded-full mx-auto mb-4">
