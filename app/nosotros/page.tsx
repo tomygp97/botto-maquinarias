@@ -12,7 +12,7 @@ export default function Nosotros() {
 
             <section className="relative h-[600px] flex items-center justify-center text-center text-white">
                 <Image
-                    src="/fondo-nosotros.jpg"
+                    src="/fondo-nosotros-2.jpg"
                     alt="Agriculture field with Crucianelli seeder"
                     fill
                     className="object-cover brightness-50"
