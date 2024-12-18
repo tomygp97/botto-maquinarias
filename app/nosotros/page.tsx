@@ -1,17 +1,29 @@
-import { Tractor, Users, Award } from 'lucide-react'
+import { Users, Award, Warehouse } from 'lucide-react'
 
-import { Hero } from './components/Hero'
 import { Contactanos } from '../components/Contactanos'
 import { YouTubeCarousel } from '../components/YoutubeCarousel'
+import Image from 'next/image'
 
 
 export default function Nosotros() {
     return (
-        <div className="min-h-screen bg-white">
-            <Hero />
+        <div className="bg-white">
+            {/* <Hero /> */}
+
+            <section className="relative h-[600px] flex items-center justify-center text-center text-white">
+                <Image
+                    src="/fondo-nosotros.jpg"
+                    alt="Agriculture field with Crucianelli seeder"
+                    fill
+                    className="object-cover brightness-50"
+                    priority
+                />
+                <div className="relative z-10 max-w-4xl mx-auto px-4">
+                    <h1 className="text-4xl md:text-6xl font-bold mb-4">Sobre Nosotros</h1>
+                </div>
+            </section>
 
             <main className="container mx-auto px-4 py-16">
-                <h1 className="text-4xl font-bold text-center mb-12">Sobre Nosotros</h1>
                 <div className="max-w-7xl mx-auto space-y-24">
 
                     {/* Texto destacado */}
@@ -46,7 +58,7 @@ export default function Nosotros() {
                     {/* Valores destacados */}
                     <section className="grid grid-cols-1 md:grid-cols-3 gap-8">
                         <div className="flex flex-col items-center text-center">
-                            <Tractor className="w-12 h-12 text-red-600 mb-4" />
+                            <Warehouse className="w-12 h-12 text-red-600 mb-4" />
                             <h4 className="text-lg font-semibold mb-2">Amplia Gama</h4>
                             <p className="text-gray-600">
                                 Ofrecemos una extensa selección de maquinaria para todas las necesidades agrícolas.

@@ -5,6 +5,7 @@ import Image from 'next/image'
 import { useState } from 'react';
 // import { useWindowSize } from '@uidotdev/usehooks';
 
+//! Borrar componente sin uso
 export const Hero = () => {
 	const [isLoading, setIsLoading] = useState(true);
 	// const size = useWindowSize();
