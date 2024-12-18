@@ -109,7 +109,7 @@ export default function Home() {
           initial={{ opacity: 0, y: -30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-          // viewport={{ once: true }}
+          viewport={{ once: true }}
           className="relative container mx-auto text-center z-20"
         >
           <h2 className="text-3xl font-bold text-white mb-8">
@@ -120,32 +120,46 @@ export default function Home() {
         {/* Contenido principal */}
         <div className="relative container mx-auto text-white text-center z-10">
           <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.2 }}
-            viewport={{ once: true }}
-            className="grid grid-cols-1 md:grid-cols-4 gap-8"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.6, delay: 0.2 }}
+              viewport={{ once: true }}
+              className="grid grid-cols-1 md:grid-cols-4 gap-8"
           >
-            {servicios.map(({ id, title, description, Icon }) => (
-              <motion.div
-                key={id}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: id * 0.1 }}
-                viewport={{ once: true }}
-                className="relative text-center p-6 bg-white bg-opacity-90 rounded shadow-md hover:shadow-lg transition"
-              >
-                <div className="flex justify-center items-center w-16 h-16 bg-gray-200 rounded-full mx-auto mb-4">
-                  <Icon className="w-8 h-8 text-gray-800" />
-                </div>
-                <h3 className="text-xl font-semibold mb-2 text-gray-900">{title}</h3>
-                {/* <p className="text-gray-600">{description}</p> */}
-                <p
-                  className="text-gray-600"
-                  dangerouslySetInnerHTML={{ __html: description }}
-                />
-              </motion.div>
-            ))}
+              {servicios.map(({ id, title, description, Icon, link, isExternal }) => (
+                  <Link
+                      key={id}
+                      href={link}
+                      className="cursor-pointer"
+                      target={isExternal ? "_blank" : "_self"}
+                      rel={isExternal ? "noopener noreferrer" : undefined}
+                  >
+                      <motion.div
+                          initial={{ opacity: 0, y: 20 }}
+                          whileInView={{ opacity: 1, y: 0 }}
+                          whileHover={{
+                              scale: 1.05,
+                              translateY: -5,
+                              transition: {
+                                  duration: 0.3,
+                                  ease: "easeOut",
+                              },
+                          }}
+                          transition={{
+                              duration: 0.4,
+                              ease: "easeInOut",
+                          }}
+                          viewport={{ once: true }}
+                          className="relative text-center p-6 bg-white bg-opacity-90 rounded shadow-md h-full flex flex-col justify-between"
+                      >
+                          <div className="flex justify-center items-center w-16 h-16 bg-gray-200 rounded-full mx-auto mb-4">
+                              <Icon className="w-8 h-8 text-gray-800" />
+                          </div>
+                          <h3 className="text-xl font-semibold mb-2 text-gray-900">{title}</h3>
+                          <p className="text-gray-600" dangerouslySetInnerHTML={{ __html: description }} />
+                      </motion.div>
+                  </Link>
+              ))}
           </motion.div>
         </div>
       </section>
