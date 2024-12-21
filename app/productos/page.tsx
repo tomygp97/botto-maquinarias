@@ -17,9 +17,10 @@ export default function Productos() {
                       src="/fondo-productos.jpg"
                       alt="Agriculture field with Crucianelli seeder"
                       fill
-                      className="object-cover brightness-50"
+                      className="object-cover"
                       priority
                   />
+                  <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay */}
                   <div className="relative z-10 max-w-4xl mx-auto px-4">
                       <h1 className="text-4xl md:text-6xl font-bold mb-4">Botto Maquinarias</h1>
                       <p className="text-xl md:text-2xl mb-8">Concesionario de maquinaria agricola</p>
