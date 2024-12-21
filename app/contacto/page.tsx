@@ -6,6 +6,7 @@ import { useForm } from 'react-hook-form'
 import { motion } from 'framer-motion'
 import { zodResolver } from '@hookform/resolvers/zod'
 import * as z from 'zod'
+import emailjs from "@emailjs/browser";
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
@@ -35,16 +36,16 @@ type Contacts = {
 
 const formSchema = z.object({
     name: z.string().min(2, {
-        message: "Name must be at least 2 characters.",
+        message: "El nombre debe tener al menos 2 caracteres.",
     }),
     email: z.string().email({
-        message: "Please enter a valid email address.",
+        message: "Ingresa un correo electrónico válido.",
     }),
     phone: z.string().min(10, {
-        message: "Please enter a valid phone number.",
+        message: "Ingresa un número de teléfono válido.",
     }),
     message: z.string().min(10, {
-        message: "Message must be at least 10 characters.",
+        message: "El mensaje debe tener al menos 10 caracteres.",
     }),
 })
 
@@ -89,16 +90,28 @@ export default function ContactPage() {
     })
 
     async function onSubmit(values: z.infer<typeof formSchema>) {
-        setIsSubmitting(true)
-        // Simulate form submission
-        await new Promise(resolve => setTimeout(resolve, 2000))
-        console.log(values)
-        setIsSubmitting(false)
-        // toast({
-        //   title: "Message Sent",
-        //   description: "We've received your message and will get back to you soon.",
-        // })
-        form.reset()
+        setIsSubmitting(true);
+        try {
+            await emailjs.send(
+            process.env.NEXT_PUBLIC_SERVICE_ID!,
+            process.env.NEXT_PUBLIC_TEMPLATE_ID!,
+            {
+                name: values.name,
+                email: values.email,
+                phone: values.phone,
+                message: values.message,
+                recipient: "info@bottomaquinarias.com",
+            },
+            process.env.NEXT_PUBLIC_PUBLIC_KEY
+            );
+            alert("Mensaje enviado correctamente.");
+            form.reset();
+        } catch (error) {
+            console.error("Error enviando el mensaje:", error);
+            alert("Hubo un error al enviar el mensaje.");
+        } finally {
+            setIsSubmitting(false);
+        }
     }
 
     return (
@@ -107,10 +120,10 @@ export default function ContactPage() {
                 <Image
                     src="/nosotros-hero-mobile.jpg"
                     alt="Agriculture field"
-                    layout="fill"
-                    objectFit="cover"
-                    className="brightness-50"
-                />
+                    fill
+                    style={{ objectFit: 'cover' }}
+                /> 
+                <div className="absolute inset-0 bg-black opacity-50"></div> {/* Overlay */}
                 <div className="absolute inset-0 flex flex-col justify-center items-center text-white p-8">
                     <motion.h1 
                         className="text-4xl md:text-5xl font-bold mb-4 text-center"

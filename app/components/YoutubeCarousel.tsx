@@ -30,8 +30,9 @@ export function YouTubeCarousel() {
                             <video
                                 className="w-full h-auto"
                                 controls
-                                preload="auto"
+                                preload="metadata"
                             >
+                                <source src="/videos/nota-recortada.webm" type="video/webm" />
                                 <source src="/videos/nota-recortada.mp4" type="video/mp4" />
                                 Tu navegador no soporta la reproducción de videos.
                             </video>
@@ -50,6 +51,7 @@ export function YouTubeCarousel() {
                             frameBorder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowFullScreen
+                            loading="lazy"
                             ></iframe>
                         </div>
                     </div>
