@@ -34,7 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>BOTTO MAQUINARIAS</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/logo2.png" />
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased

@@ -84,42 +84,42 @@ export default function Productos() {
                   <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold text-center mb-12">Stara</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-                        <ProductCard
-                            name="Hercules 6.0"
-                            description="El distribuidor Hércules tiene excelente calidad de aplicación y precisión en la dosis, alto rendimiento operativo, con resultados en la plantación más provechosos."
-                            imageUrl="/stara-hercules-6.0.jpg"
-                            whatsappNumber='5493406460332'
-                        />
-                        <ProductCard
-                            name="Imperador 3000 y 4000"
-                            description="El autopropulsado Imperador 3000 y 4000 de Stara ofrece la mejor eficiencia en pulverización, resultado de la combinación de las tecnologías innovadoras y de su calidad de aplicación ya comprobada."
-                            imageUrl="/imperador-3000.jpg"
-                            whatsappNumber='5493406460332'
-                        />
-                        <ProductCard
-                            name="Imperador 3.0"
-                            description="La mayor eficiencia en pulverización, la mayor precisión en la distribución y una uniformidad excelente en la siembra"
-                            imageUrl="/stara-imperador-3.0.jpg"
-                            whatsappNumber='5493406460332'
-                        />
-                        <ProductCard
-                            name="Bruttus 12000"
-                            description="El distribuidor por gravedad Bruttus 12000 garantiza la excelente uniformidad de aplicación y precisión en la distribución de enmiendas y fertilizantes granulados."
-                            imageUrl="/stara-bruttus-12000.jpg"
-                            whatsappNumber='5493406460332'
-                        />
-                        <ProductCard
-                            name="Reboke ninja"
-                            description="Las tolvas agrícolas Reboke Ninja están desarrolladas para el transporte de granos y alcanzan alto rendimiento de trabajo."
-                            imageUrl="/stara-reboke-ninja.jpg"
-                            whatsappNumber='5493406460332'
-                        />
-                        <ProductCard
-                            name="Hércules 10000 Inox"
-                            description="El distribuidor de arrastre Hércules es ideal para distribuir enmiendas, fertilizantes y semillas, con excelente uniformidad y calidad de distribución."
-                            imageUrl="/stara-hercules-10000-inox.jpg"
-                            whatsappNumber='5493406460332'
-                        />
+                      <ProductCard
+                          name="Hercules 6.0"
+                          description="El distribuidor Hércules tiene excelente calidad de aplicación y precisión en la dosis, alto rendimiento operativo, con resultados en la plantación más provechosos."
+                          imageUrl="/stara-hercules-6.0.jpg"
+                          whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                          name="Imperador 3000 y 4000"
+                          description="El autopropulsado Imperador 3000 y 4000 de Stara ofrece la mejor eficiencia en pulverización, resultado de la combinación de las tecnologías innovadoras y de su calidad de aplicación ya comprobada."
+                          imageUrl="/imperador-3000.jpg"
+                          whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                          name="Imperador 3.0"
+                          description="La mayor eficiencia en pulverización, la mayor precisión en la distribución y una uniformidad excelente en la siembra"
+                          imageUrl="/stara-imperador-3.0.jpg"
+                          whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                          name="Bruttus 12000"
+                          description="El distribuidor por gravedad Bruttus 12000 garantiza la excelente uniformidad de aplicación y precisión en la distribución de enmiendas y fertilizantes granulados."
+                          imageUrl="/stara-bruttus-12000.jpg"
+                          whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                          name="Reboke ninja"
+                          description="Las tolvas agrícolas Reboke Ninja están desarrolladas para el transporte de granos y alcanzan alto rendimiento de trabajo."
+                          imageUrl="/stara-reboke-ninja.jpg"
+                          whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                          name="Hércules 10000 Inox"
+                          description="El distribuidor de arrastre Hércules es ideal para distribuir enmiendas, fertilizantes y semillas, con excelente uniformidad y calidad de distribución."
+                          imageUrl="/stara-hercules-10000-inox.jpg"
+                          whatsappNumber='5493406460332'
+                      />
                     </div>
                     <div className="flex justify-center mt-8">
                       <div className="grid grid-cols-1 md:grid-cols-1 gap-8 max-w-xl">
@@ -159,27 +159,48 @@ export default function Productos() {
                   <div className="container mx-auto px-4">
                     <h2 className="text-3xl font-bold text-center mb-12">Tecnología de Siembra</h2>
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                        <ProductCard
-                          name="Monitor Orizon" 
-                          description=""
-                          imageUrl="/orizon-recortado.png"
-                          specs={["Pantalla táctil 10.1″", "Conexión WIFI","El mejor control de siembra unificado", "Índice de dobles y fallas", "Índice de calidad de dosificación", "Siembra y Fertilización variable", "Corte línea a línea"]}
-                          whatsappNumber='5493406460332'
-                        />
-                        <ProductCard
-                          name="Map 7 pro"
-                          description=""
-                          imageUrl="/Map-7.png"
-                          specs={["Sensores inteligentes. Semillas, fertilizante, rotación, RPM, tolva presión capacidad de control de hasta 120 sensores de semillas y fertilizantes.", "Preciso conteo de chía y pastura","Densidad de Siembra. Indica la cantidad de semillas por metro y por hectárea que se está sembrando." ]}
-                          whatsappNumber='5493406460332'
-                        />
-                        <ProductCard
-                          name="Consola Plantor"
-                          description="Mando a distancia manual de dosis de fertilizantes."
-                          imageUrl="/consola-plantor.png"
-                          specs={["Trabajo", "Plegado","Nivel", "Marcador"]}
-                          whatsappNumber='5493406460332'
-                        />
+                      <ProductCard
+                        name="Monitor Orizon" 
+                        description=""
+                        imageUrl="/orizon-recortado.png"
+                        specs={["Pantalla táctil 10.1″", "Conexión WIFI","El mejor control de siembra unificado", "Índice de dobles y fallas", "Índice de calidad de dosificación", "Siembra y Fertilización variable", "Corte línea a línea"]}
+                        whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                        name="Monitores de siembra Map 7"
+                        description="Conocé los modelos Lite, Plus y Pro."
+                        imageUrl="/Map-7.png"
+                        specs={["Sensores inteligentes. Semillas, fertilizante, rotación, RPM, tolva presión capacidad de control de hasta 120 sensores de semillas y fertilizantes.", "Preciso conteo de chía y pastura","Densidad de Siembra. Indica la cantidad de semillas por metro y por hectárea que se está sembrando." ]}
+                        whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                        name="Consola Plantor"
+                        description="Mando a distancia manual de dosis de fertilizantes."
+                        imageUrl="/consola-plantor.png"
+                        specs={["Trabajo", "Plegado","Nivel", "Marcador"]}
+                        whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                        name="DOSIFY - kit de conversión hidráulica para Drilor"
+                        description="Se trata de un sistema que te permite cambiar tu dosifcación de mecánica a hidráulica, permitiéndote mejorar la colocación de semillas y fertilizantes en tu tierra."
+                        imageUrl="/dosify.jpg"
+                        // specs={["Conjunto motor dosifcador semillas", "Conjunto motor dosifcador Fertilizante","Kit de Mangueras y accesorios Hidráulicos", "Marcador"]}
+                        whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                        name="Cuchilla fertilizadora"
+                        description="Nuestra cuchilla fertilizante absorbe las diferentes durezas del suelo e incorpora el fertilizante granulado en la línea de siembra en extremas condiciones de volumen de rastrojo."
+                        imageUrl="/cuchilla.png"
+                        // specs={["Conjunto motor dosifcador semillas", "Conjunto motor dosifcador Fertilizante","Kit de Mangueras y accesorios Hidráulicos", "Marcador"]}
+                        whatsappNumber='5493406460332'
+                      />
+                      <ProductCard
+                        name="Doble disco fertilizador"
+                        description="El doble disco fertilizador es una solución eficaz y versátil para aplicar fertilizantes en la siembra directa, permitiendo aportar altas dosis con una óptima precisión en la colocación de nutrientes y adaptándose a diferentes condiciones de suelo y tipos de cultivo."
+                        imageUrl="/doble-disco.png"
+                        // specs={["Conjunto motor dosifcador semillas", "Conjunto motor dosifcador Fertilizante","Kit de Mangueras y accesorios Hidráulicos", "Marcador"]}
+                        whatsappNumber='5493406460332'
+                      />
                     </div>
                   </div>
                 </section>
