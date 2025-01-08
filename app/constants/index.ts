@@ -20,9 +20,9 @@ export const productosDestacados = [
     },
     {
         id: 3,
-        title: "Monitor de Siembra Map 7",
-        image: "/Map-7.png",
-        alt: "Map 7",
+        title: "Monitor Orizon",
+        image: "/orizon-recortado.png",
+        alt: "Monitor Orizon",
         link: "/productos#leaf"
     },
 ];
