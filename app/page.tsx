@@ -8,43 +8,61 @@ import { ArrowDown } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { productosDestacados, servicios } from './constants'
 import { Contactanos } from './components/Contactanos'
+import useWindowSize from './hooks/useWindowSize'
 
 export default function Home() {
   const [isScrolled, setIsScrolled] = useState(false)
+  const { width } = useWindowSize();
+  const [mounted, setMounted] = useState(false)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      if (window.scrollY > 0) {
-        setIsScrolled(true)
-      } else {
-        setIsScrolled(false)
+  const videoSrc = mounted
+    ? width < 768
+      ? "/videos/reel-mixia-campo-story.mp4"
+      : "/videos/reel-mixia-campo.mp4"
+    : null // No renderiza el video en el servidor
+
+
+    useEffect(() => {
+      setMounted(true) // Marcar que el componente ya está montado en el cliente
+  
+      const handleScroll = () => {
+        if (window.scrollY > 0) {
+          setIsScrolled(true)
+        } else {
+          setIsScrolled(false)
+        }
       }
-    }
 
     window.addEventListener('scroll', handleScroll)
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
+  if (!mounted) {
+    return null;
+  }
+
   return (
     <>
       <div className="relative h-screen w-full overflow-hidden">
         {/* Video Background */}
-        <video
-          autoPlay
-          loop
-          muted
-          playsInline
-          className="absolute top-0 left-0 w-full h-full object-cover z-10"
-        >
-          <source src="/videos/reel-mixia-campo.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        {videoSrc && (
+          <video
+            autoPlay
+            loop
+            muted
+            playsInline
+            className="absolute top-0 left-0 w-full h-full object-cover z-10"
+          >
+            <source src={videoSrc} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        )}
 
         {/* Overlay */}
         <div className="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50" />
 
         {/* Logo */}
-        <div className="relative z-20 flex items-baseline justify-center mt-40 h-full">
+        <div className={`relative z-20 flex items-baseline justify-center ${width < 768 ? 'mt-24' : 'mt-40'} h-full`}>
           <motion.div
             initial={{ opacity: 1, scale: 1 }}
             animate={{
@@ -53,31 +71,34 @@ export default function Home() {
             }}
             transition={{ duration: 0.5 }}
           >
-            <Image
-              src="/logo.png"
-              alt="Logo"
-              width={450}
-              height={450}
-              className="max-w-full"
-            />
+          <Image
+            src="/logo.png"
+            alt="Logo"
+            width={450}
+            height={450}
+            className="max-w-full"
+            priority
+          />
           </motion.div>
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30"
-          initial={{ y: 0, opacity: 1 }}
-          animate={{
-            y: isScrolled ? 0 : [0, -10, 0],
-            opacity: isScrolled ? 0 : 1,
-          }}
-          transition={{
-            y: { repeat: Infinity, duration: 1, ease: "easeInOut" },
-            opacity: { duration: 0.3 },
-          }}
-        >
-          <ArrowDown className="text-white w-10 h-10" />
-        </motion.div>
+        {width >= 768 && (
+          <motion.div
+            className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-30"
+            initial={{ y: 0, opacity: 1 }}
+            animate={{
+              y: isScrolled ? 0 : [0, -10, 0],
+              opacity: isScrolled ? 0 : 1,
+            }}
+            transition={{
+              y: { repeat: Infinity, duration: 1, ease: "easeInOut" },
+              opacity: { duration: 0.3 },
+            }}
+          >
+            <ArrowDown className="text-white w-10 h-10" />
+          </motion.div>
+        )}
       </div>
 
       {/* Sobre Nosotros */}
