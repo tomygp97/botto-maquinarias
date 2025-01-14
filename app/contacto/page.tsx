@@ -143,7 +143,7 @@ export default function ContactPage() {
                     </motion.p>
                 </div>
             </div>
-            <div className="md:w-1/2 bg-white p-8 md:p-12 flex flex-col justify-center">
+            <div className="md:w-1/2 bg-white p-8 md:p-12 flex flex-col justify-center z-10">
                 <Form {...form}>
                     <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-6">
                         <FormField
