@@ -34,6 +34,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <title>BOTTO MAQUINARIAS</title>
+        <meta name="description" content="Bienvenido a Botto Maquinarias, tu proveedor confiable de maquinaria agrícola y más. Descubre nuestros productos y servicios." />
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
