@@ -58,8 +58,8 @@ export function YouTubeCarousel() {
                 </CarouselItem>
                 ))}
             </CarouselContent>
-            <CarouselPrevious />
-            <CarouselNext />
+            <CarouselPrevious className="absolute left-[10px] md:left-[-60px] top-1/2 transform -translate-y-1/2 p-2" />
+            <CarouselNext className="absolute right-[10px] md:right-[-60px] top-1/2 transform -translate-y-1/2 p-2" />
         </Carousel>
     )
 }
