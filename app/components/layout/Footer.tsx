@@ -1,7 +1,16 @@
+'use client'
+
 import Link from 'next/link'
 import { Facebook, Instagram, Mail, MapPin, Phone } from 'lucide-react'
+import { useEffect, useState } from 'react';
 
 export default function Footer() {
+    const [year, setYear] = useState<number | null>(null);
+
+    useEffect(() => {
+        setYear(new Date().getFullYear());
+    }, []);
+
     return (
         <footer className="bg-gray-50 border-t border-gray-100">
             <div className="max-w-6xl mx-auto px-4 py-10 md:py-16">
@@ -54,7 +63,7 @@ export default function Footer() {
                 </div>
                 <div className="mt-10 pt-6 border-t border-gray-200">
                     <p className="text-center text-sm text-gray-500">
-                        © {new Date().getFullYear()} Victor H. Botto Maquinarias. Todos los derechos reservados.
+                        © {year ?? '...'} Victor H. Botto Maquinarias. Todos los derechos reservados.
                     </p>
                 </div>
             </div>
